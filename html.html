@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!-- New version of HTML gets updated on its own
+-->
+<html lang="en">
+<head>
+<title>Static Website</title>
+<meta charset="UTF-8">
+<!-- Capable of encoding all the characters on the web
+-->
+<style>
+body 
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: cursive;
+  font-family: fantasy;
+  margin: 0;
+}
+/* Header Styling */
+.header {
+  text-align: center;
+  background: #cc2e2e;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 
+{
+  font-size: 65px;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a
+{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: magenta;
+}
+
+#example1
+{
+   box-sizing: content-box;
+   width: 1650px;
+   height: 700px;
+   border: 10px solid black;
+   background: #46cc2e
+   
+}
+.footer
+{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<!-- div tag defines a division/section in an HTML document
+-->
+<div class="header"> 
+<h1>Make MY Tour</h1>
+<h2>A complete travelling website!!!</h2>
+</div> 
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">MMT</a>
+  <a href="#" class="right">Log-In--</a>
+</div>
+
+<!-- Slide Show -->
+<section>
+  <img align="center" class="mySlides" src="https://www.itservicesingapore.sg/wp-content/uploads/2015/12/48-Hours-In-Singapore-The-City-At-Night-11.jpg" width="1600" height="700">
+  <img align="center" class="mySlides" src="https://lp-cms-production.imgix.net/features/2017/08/shutterstock_611229743-bde2e023e33c.jpg?q=25" width="1600" height="700">
+  <img align="center" class="mySlides" src="https://d346xxcyottdqx.cloudfront.net/wp-content/uploads/2016/05/singapore1-e1510549706680.jpg" width="1600" height="700">
+  <img align="center" class="mySlides" src="https://specials-images.forbesimg.com/imageserve/5d93909224fbf10007b8a1fd/960x0.jpg?fit=scale" width="1600" height="700">
+  <img align="center" class="mySlides" src="https://www.backpackerguide.nz/wp-content/uploads/2017/05/Wellington-cable-car-public-transport_optimized.jpg" width="1600" height="700">
+  <img align="center" class="mySlides" src="https://images.thrillophilia.com/image/upload/s--WNwqdllO--/c_fill,f_auto,fl_strip_profile,g_auto,h_600,q_auto,w_975/v1/images/photos/000/026/228/original/m_The_Spectacular_Greece_Tour_13.jpg.jpg?1458194832" width="1600" height="700">
+  <img align="center" class="mySlides" src="https://www.fodors.com/wp-content/uploads/2019/01/3_LaxOpenContainerLaws_LasVegas_shutterstock149733929.jpg" width="1600" height="700">
+  <img align="center" class="mySlides" src="https://images.idgesg.net/images/article/2019/06/cio_middle_east_uae_united_arab_emirates_dubai_skyline_cityscape_downtown_night_by_manjik_gettyimages-1035216626_2400x1600-100800419-large.3x2.jpg" width="1600" height="700">
+</section>
+
+<br>
+<br>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+<!-- Description -->
+
+<div id="example1">
+<section style="max-width:2000px">
+
+  <font size="7"><h2  align="center">THE TRAVELOGUE </h2></font>
+  <font size="6"><h2 align="center">We love to Travel<h2></font>
+  <font size="5" color="yellow" style="font-family:calibri;">Travelling is a way of living. It's an art which soothes people's heart and soul. Travelling may be tiresome for few but there are few others who live to travel. It's a way to refresh one's mind so that we concentrate even better later on. Few say you need money to travel, but I say more than money or anything else you need a strong will power and inner strength and guts to be able to go around the world in 80 days !!! </font>
+  <br>
+  <font size="5" color="blue" style="font-family:calibri;">Well, jokes apart, to introduce ourselves, I would say, for all the travel buff, I have created a website which would help you to choose a destination which suits you the best! </font>
+  <br>
+  <font size="5" color="brown" style="font-family:calibri;">So, all the wanderlust, fasten your seat belts coz  "Make MY Tour" has come with a bang and a lot of exciting offers for each variety of folks...one who intend to travel and others who love to travel.</font>
+
+</section>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- Footer -->
+
+<div class="footer">
+<h2>FOOTER</h2>
+<footer>
+  <h2>Contact Information: <a href="mailto: saumya_singh048@rocketmail.com"> saumya_singh048@rocketmail.com </a></p>
+</footer>
+</div>
+
+<h1>Click On any one to know more....!!!</h1>
+
+<ul> 
+      <li> <a href="#aboutus"><font size="7" style="font-family:Lucida console;"><b>ABOUT Us </b></font></a></li>
+      <!-- This sets link within the same webpage
+      -->
+      <li> <a href="#Details"><font size="7" style="font-family:Lucida console;"><b>Enter Your Details here</b></font></a></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>
+      <a name="aboutus"></a>
+      <fieldset>
+      <legend><font size="7" color="brown" style="font-family:Calibri";><b>Know 'bout Us</b></font></legend>
+      <font size="5" color="purple" style="font-family:Calibri;"><i>
+      We have formed Make MY Tour app as well as website in collaboration with Make MY Trip and hence we reserve all the rights with respect to the same.
+      We serve our guests as God and make sure that you do not face any problem or difficulties of sorts while your trip is ON. We always have many 
+      exciting offers which our company offers throughout the year.
+      </i>
+      </font>
+      <br>
+      <font size="5" color="green" style="font-family:Calibri;">
+      <i>
+      Our company was established in the year 1999 and it has been a 20 years long journey which we happen to adore even now and we as a family are still 
+      going strong as always. This year we are celebrating "20 Years Unstoppable" with our family. Certainly, our guests are our family too would mean that 
+      all the wanderlust shall get ready coz they are going to get loaded with some overwhelming, overexciting offers this entire year!
+      </i>
+      </font>
+      <br>
+      <font size="7" color="red" style="font-family:calibri:">
+      Toll FRee No.: 1800 9999 9999
+      </font>
+      </fieldset>
+      
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+      <a name="Details"></a>
+      <fieldset>
+      <legend><font size="7" color="brown" style="font-family:Calibri";><b>Enter Your Details</b></font></legend>
+      <form action="" method="">
+      <font size="5" style="font-family:calibri;"><b>First Name: </b></font>
+      <input type="text" name="FirstName"> 
+      <br>
+      <font size="5" style="font-family:calibri;"><b>Last Name: </b></font>
+      <input type="text" name="LastName"> 
+      <br>
+      <font size="5" style="font-family:calibri;"><b>Enter your Journey Date: </b></font>
+      <input type="date" name="day"> 
+      <br>
+      
+      <font size="5" style="font-family:calibri;"><b>Choose country you would like to Travel: </b></font> 
+      <select>
+      <option value="Malaysia">Malaysia</option>
+      <option value="England">England</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Thailand">Thailand</option>
+      <option value="India">India</option>
+      <option value="China">China</option>
+      <option value="Switzerland">Switzerland</option>
+      <option value="Maldives">Maldives</option>
+      <option value="Dubai">Dubai</option>
+      <option value="LasVegas">Las Vegas</option>
+      <option value="NewZealand">New Zealand</option>
+      <option value="NewYork">New York</option>
+      <option value="Maldives">Maldives</option>
+      <option value="Europe">Europe</option>
+      <option value="Amsterdam">Amsterdam</option>
+      <option value="Australia">Australia</option>
+      </select>
+      <br>
+      <font size="5" style="font-family:calibri;"><b>Enter no. of days you want to stay there: </b></font>
+      <input type="number" max="10" min="1" name="numofdays" >
+      <br>
+      <font size="5" style="font-family:calibri;"><b>Gender: </b></font>
+      <input type="radio" name="gender" ><font size="4" style="font-family:calibri;">Female</font>
+      <input type="radio" name="gender"><font size="4" style="font-family:calibri;">Male</font>
+      <br>
+      <font size="5" style="font-family:calibri;"><b>Please tick the documents you have: </b></font>
+      <input type="checkbox" name="doc"><font size="4" style="font-family:calibri;">&nbspPAN Card&nbsp&nbsp</font>
+      <input type="checkbox" name="doc"><font size="4" style="font-family:calibri;">&nbspAadhar Card&nbsp&nbsp</font>
+      <input type="checkbox" name="doc"><font size="4" style="font-family:calibri;">&nbspLife Insurance&nbsp&nbsp</font>
+      <br>
+      <font size="5" style="font-family:calibri;"><b>Comments: </b></font>
+      <textarea rows="10" cols="40"></textarea>
+      <br>
+      <br>
+      <p align="center"><input type="submit" value="SUBMIT"></p>
+      </form>
+      </fieldset>
+      
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+
+</body>
+
+</html>
